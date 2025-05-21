@@ -7,8 +7,6 @@
 
 # FADDOMINSTALL
 
-<em>Unlock Seamless System Performance and Stability</em>
-
 <!-- BADGES -->
 <!-- local repository, no metadata badges. -->
 
@@ -55,22 +53,7 @@ This project aims to automate software deployment processes, providing developer
 
 ---
 
-## 🔥 Features
 
-| Component | Details                              |
-| :-------- | :----------------------------------- |
-| **Architecture** | <ul><li>Monolithic</li><li>No clear separation of concerns between modules</li></ul> |
-| **Code Quality** | <ul><li>Coding style is inconsistent throughout the project</li><li>Lack of documentation for some functions</li></ul> |
-| **Documentation** | <ul><li>Nightly builds are automatically generated using a YAML file, but documentation for individual components is scarce</li></ul> |
-| **Integrations** | <ul><li>Powershell integration is well-maintained and has clear instructions on how to use it</li><li>Lack of clear information on how the project integrates with other tools or services</li></ul> |
-| **Modularity** | <ul><li>No clear separation of concerns between modules, making it difficult to maintain or update individual components</li><li>Some modules are tightly coupled to each other</li></ul> |
-| **Testing** | <ul><li>Lack of automated tests for the project, relying on manual testing and user feedback</li><li>No clear instructions on how to run the tests or what test cases cover</li></ul> |
-| **Performance** | <ul><li>The project's performance is not explicitly measured or optimized</li><li>Could benefit from performance monitoring and optimization techniques</li></ul> |
-| **Security** | <ul><li>No clear security practices or protocols in place, such as encryption or secure authentication</li><li>Lack of input validation and sanitization</li></ul> |
-| **Dependencies** | <ul><li>The project relies on outdated dependencies (e.g., `faddomsflowgenerator.msi`) that may pose security risks</li><li>No clear information on how to update or manage dependencies</li></ul> |
-| **Scalability** | <ul><li>The project's scalability is not explicitly measured or optimized for large-scale deployments</li><li>Could benefit from horizontal scaling, load balancing, and other scalable architecture techniques</li></ul> |
-
----
 
 ## 🌅 Project Structure
 
@@ -123,13 +106,15 @@ This project aims to automate software deployment processes, providing developer
 
 ### 🌟 Prerequisites
 
-This project requires the following dependencies:
+This script requires the following dependencies:
 
-- **Programming Language:** unknown
+- **Minimum PowerShell v5.1**
+- **Have sufficient permissions to remotely invoke commands to respective devices**
+- **Necessary firewall openings**
 
-### ⚡ Installation
+### ⚡ Installation and Usage
 
-Build FaddomInstall from the source and intsall dependencies:
+Remotely install Faddom sFlow Generator and host sFlow:
 
 1. **Clone the repository:**
 
@@ -143,35 +128,24 @@ Build FaddomInstall from the source and intsall dependencies:
     ❯ cd FaddomInstall
     ```
 
-3. **Install the dependencies:**
+3. **(OPTION 1) Remote install for a single computer:**
 
-echo 'INSERT-INSTALL-COMMAND-HERE'
+    ```sh
+    ❯ .\FaddomInstall.ps1 -ComputerName "<PLACEHOLDER>"
+    ```
+    
+4. **(OPTION 2) Bulk remote install:**
 
-### 🔆 Usage
-
-Run the project with:
-
-echo 'INSERT-RUN-COMMAND-HERE'
-
-### 🌠 Testing
-
-Faddominstall uses the {__test_framework__} test framework. Run the test suite with:
-
-echo 'INSERT-TEST-COMMAND-HERE'
+    ```sh
+    ❯ "SERVER01", "SERVER02", "SERVER03" | .\FaddomInstall.ps1
+    ```
 
 ---
-
-## 🌻 Roadmap
-
-- [X] **`Task 1`**: <strike>Implement feature one.</strike>
-- [ ] **`Task 2`**: Implement feature two.
-- [ ] **`Task 3`**: Implement feature three.
 
 ---
 
 ## 🤝 Contributing
 
-- **💬 [Join the Discussions](https://LOCAL/Projects/FaddomInstall/discussions)**: Share your insights, provide feedback, or ask questions.
 - **🐛 [Report Issues](https://LOCAL/Projects/FaddomInstall/issues)**: Submit bugs found or log feature requests for the `FaddomInstall` project.
 - **💡 [Submit Pull Requests](https://LOCAL/Projects/FaddomInstall/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
 
