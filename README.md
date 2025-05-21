@@ -3,40 +3,12 @@
 <!-- HEADER STYLE: CLASSIC -->
 <div align="center">
 
-<img src="readmeai/assets/logos/purple.svg" width="30%" style="position: relative; top: 0; right: 0;" alt="Project Logo"/>
-
 # FADDOMINSTALL
 
 <!-- BADGES -->
 <!-- local repository, no metadata badges. -->
-
-<em>Built with the tools and technologies:</em>
-
-<img src="https://img.shields.io/badge/MSI-FF0000.svg?style=default&logo=MSI&logoColor=white" alt="MSI">
-
 </div>
 <br>
-
----
-
-## ☀️ Table of Contents
-
-- [☀ ️ Table of Contents](#-table-of-contents)
-- [🌞 Overview](#-overview)
-- [🔥 Features](#-features)
-- [🌅 Project Structure](#-project-structure)
-    - [🌄 Project Index](#-project-index)
-- [🚀 Getting Started](#-getting-started)
-    - [🌟 Prerequisites](#-prerequisites)
-    - [⚡ Installation](#-installation)
-    - [🔆 Usage](#-usage)
-    - [🌠 Testing](#-testing)
-- [🌻 Roadmap](#-roadmap)
-- [🤝 Contributing](#-contributing)
-- [📜 License](#-license)
-- [✨ Acknowledgments](#-acknowledgments)
-
----
 
 ## 🌞 Overview
 
@@ -110,7 +82,6 @@ This script requires the following dependencies:
 
 - **Minimum PowerShell v5.1**
 - **Have sufficient permissions to remotely invoke commands to respective devices**
-- **Necessary firewall openings**
 
 ### ⚡ Installation and Usage
 
